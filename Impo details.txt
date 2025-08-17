@@ -1,0 +1,26 @@
+Conditional Operator 
+1. Ternary 
+Condition ? dosomething True : dosomething False
+ex : age >= 18 ? printf("You are an adult"); : printf("You are not an adult")
+
+
+ status = scanf("%ld", &num);
+ while (status == 1)
+ {
+ /* loop actions */
+ status = scanf("%ld", &num);
+ } is same as 
+
+ while (scanf("%ld", &num) == 1)
+ {
+ /* loop actions */
+ } 
+
+ In C, the lone semicolon represents the null statement
+
+
+
+
+
+
+ int x 
