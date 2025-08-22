@@ -19,6 +19,9 @@ ex : age >= 18 ? printf("You are an adult"); : printf("You are not an adult")
  In C, the lone semicolon represents the null statement
 
 
+ 
+
+
 
 
 
