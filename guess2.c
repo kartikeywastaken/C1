@@ -77,3 +77,8 @@ int main(){
     
 //     return 0;
 // }
+
+// A do-while loop checks its condition at the end of the loop. This guarantees that the code inside the loop will execute at least once, even if the condition is false.
+
+//  A while loop checks its condition at the beginning of the loop. If the condition is false from the start, the code inside the loop will never execute
+

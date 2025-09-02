@@ -4,7 +4,7 @@
 #include <string.h> 
 
 struct student { //initialising a struct named student
-    char stdName[20]; // declaring what it can hold
+    char stdName[20]; // declaring what it can hold, name can be 20 characters long.
     int stdAge;
     double stdgpa;
 };
@@ -31,12 +31,12 @@ struct student { //initialising a struct named student
 
 // }
 
-int maxAge(struct student array[], int size){
+int maxAge(struct student array[], int size){ // passing parameters (an array and size of the number of students)
     int i, max_age, max_index;
     char student_with_max_age[20];
-    max_index = 0;
+    max_index = 0; // initialising max index with 0
 
-    max_age = array[0].stdAge;
+    max_age = array[0].stdAge; // assuming the max age to be of the first student 
     for ( i = 1; i < size; i++)
     {
         if (max_age < array[i].stdAge)
@@ -46,7 +46,7 @@ int maxAge(struct student array[], int size){
         }  
     }
     // printf("The max age is: %d\n", array[max_index].stdAge);
-    return max_index;
+    return max_index;// return the new or the already assingned max index
 }
 
 double average_gpa(struct student array[], int size ){  // a function named average gpa which takes two parameters stdGpa and size
@@ -55,7 +55,7 @@ double average_gpa(struct student array[], int size ){  // a function named aver
     sum = 0.0;
     for ( i = 0; i < size; i++)
     {
-        sum += array[i].stdgpa;
+        sum += array[i].stdgpa; //sum = sum + array[i].stdgpa;
     }
     avg = sum/size;
     return avg;
