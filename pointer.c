@@ -20,3 +20,23 @@ int main(){
     return 0;
 }
 
+int main(){
+    int a,b;
+    a = 35;
+    b = 25;
+
+    int* p;
+    p = &a;
+
+    printf("The value of variable is %d\n", *&a);
+    printf("The memory address is: %p\n", p);
+
+    *p = b;
+
+    printf("The value of variable is %d\n", *&a=b);
+    printf("The memory address is: %p\n", p);
+
+
+    return 0;
+}
+
